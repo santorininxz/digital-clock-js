@@ -1,5 +1,7 @@
 # 🕒 Digital Clock JS
 
+# Link para o Pages: https://santorininxz.github.io/digital-clock-js/
+
 Um relógio digital moderno desenvolvido com **HTML**, **CSS** e **JavaScript** puro.  
 O projeto mostra as horas, minutos e segundos em tempo real, com um design limpo e responsivo.
 
