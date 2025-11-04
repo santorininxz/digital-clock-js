@@ -1,0 +1,88 @@
+/* Importa a fonte 'Open Sans' do Google Fonts, com diferentes espessuras (300, 400, 500) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+/* 
+Remove margens e espaçamentos padrões de todos os elementos,
+e define a fonte padrão para todo o documento.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 
+Estiliza o corpo da página:
+- altura total da tela (100vh = 100% da altura da viewport)
+- aplica um degradê de fundo horizontal (90 graus)
+- centraliza o conteúdo (tanto na vertical quanto na horizontal) com Flexbox
+*/
+body {
+    height: 100vh;
+    background: linear-gradient(282deg, #532d86,#95cae4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+Classe principal do relógio digital:
+- usa flexbox para alinhar os blocos (horas, minutos e segundos)
+- define altura e largura fixas
+- fundo transparente para deixar o degradê visível
+- cantos arredondados
+- sombra para dar profundidade
+*/
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 25px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .6);
+}
+
+/* 
+Cada bloco interno (horas, minutos e segundos):
+- tamanho fixo
+- usa flexbox em coluna para empilhar número e texto ("Horas", "Minutos", "Segundos")
+- centraliza o conteúdo
+- cor do texto branca
+- fundo escuro e semi-transparente
+- sombra forte para destaque
+- cantos arredondados
+- espaçamento entre letras (letter-spacing)
+*/
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .9);
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+
+/* 
+Estilo para o número (hora, minuto e segundo):
+- fonte grande e negrito
+*/
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+/* 
+Classe "tempo" usada no texto abaixo do número
+(ex: “HORAS”, “MINUTOS”, “SEGUNDOS”)
+- fonte bem menor para contraste visual
+*/
+.relogio span.tempo {
+    font-size: 10px;
+}

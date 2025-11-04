@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- 
+Define o tipo de documento como HTML5 e o idioma principal da página como português do Brasil.
+-->
+
+<head>
+    <!-- Define o conjunto de caracteres usado, garantindo compatibilidade com acentuação e símbolos -->
+    <meta charset="UTF-8">
+
+    <!-- Garante compatibilidade com versões mais antigas do Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Faz o layout se ajustar ao tamanho da tela em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importa o arquivo CSS externo responsável pela aparência do relógio -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Define o título que aparecerá na aba do navegador -->
+    <title>Relógio Digital</title>
+</head>
+
+<body>
+    <!-- 
+    Container principal do relógio digital.
+    Cada “div” interna representa uma parte do tempo (horas, minutos, segundos).
+    -->
+    <div class="relogio">
+
+        <!-- Bloco das horas -->
+        <div>
+            <!-- Exibe o valor das horas -->
+            <span id="horas">00</span>
+
+            <!-- Rótulo textual “Horas” -->
+            <span class="tempo">Horas</span>
+        </div>
+
+        <!-- Bloco dos minutos -->
+        <div>
+            <!-- Exibe o valor dos minutos -->
+            <span id="minutos">00</span>
+
+            <!-- Rótulo textual “Minutos” -->
+            <span class="tempo">Minutos</span>
+        </div>
+
+        <!-- Bloco dos segundos -->
+        <div>
+            <!-- Exibe o valor dos segundos -->
+            <span id="segundos">00</span>
+
+            <!-- Rótulo textual “Segundos” -->
+            <span class="tempo">Segundos</span>
+        </div>
+    </div>
+
+    <!-- 
+    Importa o arquivo JavaScript que atualiza os valores de hora, minuto e segundo em tempo real.
+    -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
